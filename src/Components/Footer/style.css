@@ -1,0 +1,131 @@
+.main-footer {
+    height: auto;
+    width: 100%;
+    border-top: 1px solid #000;
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0);
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 10px 0px;
+}
+
+.footer-sec-1 {
+    width: 100%;
+}
+
+.footer-sec-1>h1 {
+    font-size: 30px;
+}
+
+.footer-sec-1>p {
+    font-size: 18px;
+}
+
+.social-links-div {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.social-link {
+    padding: 4px;
+    text-decoration: none;
+    color: #4267B2;
+    background-color: #d5d5d5;
+    transition: .3s;
+    margin-right: 30px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.social-link:hover {
+    opacity: 1;
+}
+
+.instagram-link {
+    color: #ff00c0;
+}
+
+.mail-link {
+    color: #E60023;
+}
+
+.phone-link {
+    color: #0072b1;
+}
+
+.footer-sec-5 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-sec-4 {
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid rgba(225, 225, 225, 0.5);
+    color: rgba(225, 225, 225, 0.5);
+    text-transform: uppercase;
+}
+
+.footer-sec-4-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-links:hover {
+    color: var(--color-2);
+}
+
+@media only screen and (max-width:1024px) {
+    .main-footer {
+        height: auto;
+        width: 100%;
+        border-top: 1px solid #000;
+    }
+
+    .footer-sec-1 {
+        padding: 40px 0px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .footer-accordion-div {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .main-footer {
+        margin-top: 50px;
+    }
+
+    .footer-sec-1 {
+        padding: 10px 0px;
+    }
+}

@@ -1,0 +1,266 @@
+.main-nav {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.top-nav-for-num {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2px 0px;
+    text-align: center;
+}
+
+.upper-nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    background-image: url('../../Assets/logo.png');
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+
+.logo-div,
+.second-div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-div {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-div img {
+    display: none;
+    height: 90%;
+}
+
+
+.logo-link {
+    color: var(--color-2) !important;
+    text-decoration: none;
+    width: 100%;
+}
+
+.logo-link>img {
+    width: 90%;
+}
+
+.nav-second-link {
+    text-decoration: none;
+    font-size: 26px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.second-div>div {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 2px;
+    height: 40%;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.second-div>span {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.second-div>span>img {
+    width: 30px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.hum-burger-icon {
+    height: 60%;
+    cursor: pointer;
+    display: none !important;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.hum-burger-icon>img {
+    display: none;
+    height: 100%;
+}
+
+.lower-div {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-div>ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lower-div>ul>li {
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+}
+
+.active-links {
+    color: var(--color-2) !important;
+}
+
+.cart-main-hd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-close-button {
+    width: 10px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.cart-items-div {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.item-img-div {
+    width: 40%;
+    height: 100%;
+}
+
+.item-img-div>img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart-item-detail-div {
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: red;
+    border: 0;
+    background-color: transparent;
+}
+
+.cart-sku-text {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    width: 85%;
+    word-break: break-all;
+}
+
+.cart-item-detail-div>div>p {
+    padding: 0;
+    margin: 0;
+}
+
+.quantity-price-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+@media only screen and (max-width:998px) {
+    .upper-nav {
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    .profile-icon {
+        display: none;
+    }
+
+    .logo-div {
+        width: 80%;
+    }
+
+    .lower-div {
+        display: none;
+    }
+
+    .second-div>span {
+        display: none;
+    }
+
+    .second-div>div {
+        display: none;
+    }
+
+    .hum-burger-icon {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+    }
+
+    .hum-burger-icon>img {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .upper-nav {
+        background-image: none;
+    }
+
+    .logo-div>img {
+        width: 200px;
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .logo-div>img {
+        width: 150px;
+        display: flex;
+    }
+}

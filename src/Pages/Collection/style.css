@@ -1,0 +1,366 @@
+.page-hd {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 52px;
+    margin: 60px 0px;
+}
+
+.collectionpage-sec2,
+.collectionpage-sec3 {
+    width: 100%;
+    display: flex;
+}
+
+.collectionpage-sec3 {
+    display: none;
+}
+
+.grids-div,
+.sort-div,
+.filter-div {
+    width: 12%;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.sort-div,
+.filter-div {
+    width: 10%;
+}
+
+.grids-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid-icons {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.grid-icons:hover {
+    color: var(--color-2);
+}
+
+.active-icons {
+    color: black;
+}
+
+.active-icons:hover {
+    color: black;
+}
+
+.layout-icon {
+    transform: rotateZ(90deg);
+}
+
+.quantity-div {
+    height: 80px;
+    width: 68%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sort-div,
+.filter-div {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.active-sort {
+    font-weight: bold;
+}
+
+.sort-div:hover,
+.filter-div:hover {
+    color: rgb(0, 0, 0);
+}
+
+.sort-icon {
+    margin-left: 5px;
+}
+
+.drop-down-div {
+    position: absolute;
+    z-index: 4;
+    top: 100%;
+    width: 150%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: white;
+    padding: 0px 25px 0px 25px;
+}
+
+.drop-down-div>ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drop-down-div>ul>li {
+    margin-top: 25px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.res-grids-div,
+.res-sort-div,
+.res-filter-div {
+    width: 20%;
+    height: 80px;
+    border: 1px solid black;
+}
+
+.res-sort-div,
+.res-filter-div {
+    width: 40%;
+}
+
+.res-drop-down-div {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: white;
+    padding: 0px 25px 0px 25px;
+}
+
+.res-drop-down-div>ul {
+    list-style: none;
+    padding: 0;
+}
+
+.res-drop-down-div>ul>li {
+    margin-top: 25px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cards-main-div {
+    width: 100%;
+    height: auto;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.card-div {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-top: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.out-of-stock-hd {
+    position: absolute;
+    z-index: 3;
+    top: 30%;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-div-1 {
+    width: 100%;
+    height: 800px;
+}
+
+.card-div-2 {
+    width: 49%;
+    height: 550px;
+}
+
+.card-div-3 {
+    width: 32.5%;
+    height: 500px;
+}
+
+.card-div-6 {
+    width: 16%;
+    height: 450px;
+}
+
+
+.card-img-div {
+    width: 100%;
+    height: 85%;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.7);
+    overflow: hidden;
+    position: relative;
+    /* Ensure positioning context for absolute elements */
+}
+
+.card-img-div img {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.1s;
+    position: absolute;
+    /* Allow images to overlap */
+    top: 0;
+    /* Align images within the container */
+    left: 0;
+}
+
+.card-img-div.hovered img {
+    opacity: 0;
+    /* Hide the default image */
+}
+
+.card-img-div.hovered img:last-of-type {
+    /* Assuming the hover image is the second one */
+    opacity: 1;
+    /* Show the hover image */
+}
+
+.details-div {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 14px;
+}
+
+.product-name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.prices-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-price {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.product-price-before-disc {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: line-through;
+}
+
+.product-disc-per {
+    color: red;
+}
+
+@media only screen and (min-width:768px) {
+    .card-div-1 {
+        width: 32.5%;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .layout-icon {
+        display: none;
+    }
+
+    .card-div-6 {
+        width: 49%;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .page-hd {
+        font-size: 42px;
+        margin: 30px 0px;
+    }
+
+    .grids-div,
+    .sort-div,
+    .filter-div {
+        height: 60px;
+    }
+
+    .collectionpage-sec2 {
+        display: none;
+    }
+
+    .collectionpage-sec3 {
+        display: flex;
+    }
+
+    .card-div-3 {
+        width: 49%;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .page-hd {
+        font-size: 32px;
+        margin: 20px 0px;
+    }
+
+    .grids-div,
+    .sort-div,
+    .filter-div {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .card-div-3 {
+        width: 49%;
+        height: 350px;
+    }
+
+    .card-div-1 {
+        width: 100%;
+        height: 500px;
+    }
+
+    .card-div-2 {
+        width: 49%;
+        height: 350px;
+    }
+
+    .grid-icons {
+        font-size: 24px;
+    }
+
+    .card-img-div {
+        height: 75%;
+    }
+
+    .details-div {
+        height: 25%;
+    }
+
+    .out-of-stock-hd {
+        height: 50px;
+    }
+}

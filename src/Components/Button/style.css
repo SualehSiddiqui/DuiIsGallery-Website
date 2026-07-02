@@ -1,0 +1,39 @@
+.all-products-button {
+    padding: 20px 40px;
+    text-transform: uppercase;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    border: none;
+    position: relative;
+    border: 1px solid black;
+}
+
+.all-products-button::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    transition: all .5s;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
+
+.all-products-button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.all-products-button:hover::before {
+    width: 0%;
+}
+
+@media only screen and (max-width:576px) {
+    .all-products-button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+}

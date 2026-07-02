@@ -1,0 +1,10 @@
+.sec3-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sec3-featured-div {
+    width: 80% !important;
+}
